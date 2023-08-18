@@ -82,6 +82,7 @@ export default function Component({ board, allowAddColumn }: Props) {
 
   const renderCard = (content: any, bag: any) => {
     const indices = findCardIndices(content.id, board);
+    const myvar = null;
     return (
       <KanbanCard
         {...content}

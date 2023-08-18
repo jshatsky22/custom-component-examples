@@ -3,13 +3,14 @@
   width: 100%;
   display: flex;
   padding-top: 20px;
+  border-radius: 4px;
   align-items: top;
   justify-content: flex-start;
-  background-color: #000000;
+  background-color: #1f2633;
 }
 
 .kanban-card {
-  background: rgb(58, 58, 58);
+  background: #454d5f;
   /* border: 1px solid gray; */
   width: 300px;
   height: 105px;
@@ -26,7 +27,7 @@
 
 .title-container {
   padding-bottom: 10px;
-  border-bottom: 2px solid #444444;
+  border-bottom: 2px solid #2f384c;
   margin-bottom: 15px;
 }
 
