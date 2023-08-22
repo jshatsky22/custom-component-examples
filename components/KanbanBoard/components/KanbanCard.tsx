@@ -15,6 +15,7 @@ import {
 interface KanbanCardProps {
   title: string;
   description: string;
+  assignee?: string;
   id: number;
   columnIndex: number;
   cardIndex: number;
@@ -27,6 +28,7 @@ export default function KanbanCard({
   description, // changeCard,
   id,
   cardIndex,
+  assignee,
   columnIndex,
   updateProperties,
   onCardEdit,
@@ -44,7 +46,7 @@ export default function KanbanCard({
         <Title order={4} color="gray.3">
           {title}
         </Title>
-        <Avatar radius="xl" size="sm"></Avatar>
+        <Avatar src={assignee} radius="xl" size="sm"></Avatar>
       </Group>
       <Text size="sm" color="dimmed">
         {description}

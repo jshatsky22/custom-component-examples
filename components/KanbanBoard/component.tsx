@@ -82,6 +82,7 @@ export default function Component({ board, allowAddColumn }: Props) {
 
   const renderCard = (content: any, bag: any) => {
     const indices = findCardIndices(content.id, board);
+    console.log("THE ASIGNEE OF THE TASK IS ", content.id, content.assignee);
     const myvar = null;
     return (
       <KanbanCard
@@ -90,6 +91,7 @@ export default function Component({ board, allowAddColumn }: Props) {
         cardIndex={indices.cardIndex}
         // editCard={editCard}
         updateProperties={updateProperties}
+        assignee={content.assignee}
         onCardEdit={onCardEdit}
       />
     );
